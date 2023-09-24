@@ -1,0 +1,27 @@
+{
+  "name": "giancarlos-io-frontend-backend-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier . --write",
+    "typecheck": "tsc",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "4.1.0",
+    "@typescript-eslint/eslint-plugin": "6.7.2",
+    "@typescript-eslint/parser": "6.7.2",
+    "eslint": "8.50.0",
+    "husky": "8.0.3",
+    "lint-staged": "14.0.1",
+    "prettier": "3.0.3",
+    "typescript": "5.2.2"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
